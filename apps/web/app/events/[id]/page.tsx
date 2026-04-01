@@ -152,7 +152,7 @@ export default function EventDetailsPage() {
         const updated = [...previousRsvps]
         
         if (existingIdx >= 0) {
-          updated[existingIdx] = { ...updated[existingIdx], status: newStatus }
+          updated[existingIdx] = { ...updated[existingIdx], status: newStatus } as Rsvp
         } else {
           updated.push({
             id: 'optimistic-' + Date.now(),
