@@ -1,9 +1,6 @@
 {
   "framework": null,
   "installCommand": "corepack enable && corepack prepare pnpm@9.0.0 --activate && pnpm install",
-  "buildCommand": "pnpm turbo run build --filter=web",
-  "outputDirectory": "apps/web/.next",
-  "env": {
-    "SKIP_ENV_VALIDATION": "1"
-  }
+  "buildCommand": "SKIP_ENV_VALIDATION=1 pnpm turbo run build --filter=web",
+  "outputDirectory": "apps/web/.next"
 }
