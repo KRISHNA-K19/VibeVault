@@ -1,5 +1,4 @@
 {
-  "installCommand": "cd ../.. && corepack enable && corepack prepare pnpm@9.0.0 --activate && pnpm install",
-  "buildCommand": "cd ../.. && SKIP_ENV_VALIDATION=1 pnpm turbo run build --filter=web",
+  "buildCommand": "pnpm build",
   "outputDirectory": ".next"
 }
